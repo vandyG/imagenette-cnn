@@ -29,7 +29,12 @@ classifiers = [
     "Topic :: Utilities",
     "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "tensorflow-datasets>=4.9.3",
+    "tensorflow[and-cuda]>=2.19.0",
+]
 
 [project.urls]
 Homepage = "https://vandyG.github.io/imagenette-cnn"
@@ -102,6 +107,10 @@ ci = [
     "mkdocstrings[python]>=0.29",
     # YORE: EOL 3.10: Remove line.
     "tomli>=2.0; python_version < '3.11'",
+]
+dev = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
 ]
 
 [tool.uv]
